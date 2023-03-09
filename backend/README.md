@@ -14,3 +14,6 @@ Things to think about
 1. How to label each video? Do we use the url even though it is distinct (however, it is too ugly)
     - Or do we want to use an ID for each video? We can then keep track of each video's ID, using a dictionary --> is this too complicated? 
 2. How to ensure that a transcribed video does not get transcribed again? 
+
+Things to experiment about 
+- Docker??
