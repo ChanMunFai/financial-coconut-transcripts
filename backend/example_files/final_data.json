@@ -1,0 +1,28 @@
+[
+    {
+        "url": "https://example.com/podcast/episode123",
+        "title": "Example Podcast Episode 123",
+        "summary": "In this episode...",
+        "full_transcript": "This is the full transcript of the podcast episode...",
+        "transcripts": {
+            "0:00": "Intro music plays.",
+            "0:10": "Host: Welcome to Example Podcast Episode 123.",
+            "1:09": "Guest: Hi, thanks for having me.",
+            "2:35": "Host: So tell us, what inspired you to start your own business?",
+            "4:20": "Guest: Well, I've always been interested in entrepreneurship...",
+        }
+    }
+    {
+        "url": "https://example.com/podcast/episode2",
+        "title": "Example Podcast Episode 2",
+        "summary": "In this episode...",
+        "full_transcript": "This is the full transcript of the podcast episode...",
+        "transcripts": {
+            "0:00": "Intro music plays.",
+            "0:10": "Host: Welcome to Example Podcast Episode 123.",
+            "1:09": "Guest: Hi, thanks for having me.",
+            "2:35": "Host: So tell us, what inspired you to start your own business?",
+            "4:20": "Guest: Well, I've always been interested in entrepreneurship...",
+        }
+    }
+]
