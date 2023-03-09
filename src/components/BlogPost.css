@@ -6,6 +6,18 @@
   padding: 0rem 6.2rem;
 } 
 
+@media only screen and (max-width: 768px) and (min-width: 330px) {
+  .blog > .blog-h2, .blog-h3, .blog-p, .player-wrapper { 
+    padding: 0rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .blog > .blog-h2, .blog-h3, .blog-p, .player-wrapper { 
+    padding: 0rem 0.1rem;
+  }
+}
+
 .blog > .blog-h3 {
   margin-bottom: 1rem;
 }

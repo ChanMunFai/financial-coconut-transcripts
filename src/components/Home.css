@@ -1,10 +1,19 @@
 .HomeContainer {
-  padding: 2rem 6.2rem 
+  padding: 2rem 6.2rem; 
+  /* text-align: center;  */
+}
+
+@media only screen and (max-width: 768px) {
+  .HomeContainer {
+    padding: 2rem;
+  }
 }
   
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
+  /* justify-content: center;
+  align-content: center; */
 }
 

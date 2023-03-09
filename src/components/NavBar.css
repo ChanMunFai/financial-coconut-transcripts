@@ -8,6 +8,26 @@
   padding: 1rem 6rem;
 }
 
+@media only screen and (max-width: 768px) and (min-width: 330px){
+  .NavBar {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 0rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .NavBar {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    gap: 0rem;
+  }
+}
+
 /* Left */
 .TitleContainer {
   display: flex;
@@ -28,8 +48,8 @@
 
 /* Right  */
 .AboutContainer {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .AboutButton {
