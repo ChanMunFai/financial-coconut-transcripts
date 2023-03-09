@@ -1,0 +1,56 @@
+{
+	"posts": [
+		{
+			"id": "1",
+			"title": "How To Create A Better Budget",
+			"url": "https://www.youtube.com/watch?v=5ywZibui2Jc",
+			"content": "Create React App is a comfortable environment for learning React, and is the best way to start building a new single-page application in React. It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have Node >= 14.0.0 and npm >= 5.6 on your machine. To create a project, run: `npx create-react-app my-app` ",
+			"transcript":{
+				"0.2": "Hello welcome to podcast!",   
+				"5.0": "This is the FC",
+				"10.2": "Hello welcome to podcast!",   
+				"11.0": "This is the FC"
+			}
+		},
+		{
+			"id": "2",
+			"title": "Introducing JSX",
+			"url": "https://www.youtube.com/watch?v=7fPXI_MnBOY",
+			"content": "This funny tag syntax is neither a string nor HTML. It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.", 
+			"transcript":{
+				"0.2": "Hello welcome to podcast!",   
+				"5.0": "This is the FC"
+			}
+		},
+		{
+			"id": "3",
+			"title": "Components and props",
+			"url": "https://www.youtube.com/watch?v=00AkMN9IAAY",
+			"content": "Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen. Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.",
+			"transcript":{
+				"0.2": "Hello welcome to podcast!",   
+				"5.0": "This is the FC"
+			}
+		},
+		{
+			"id": "4",
+			"title": "Conditional rendering",
+			"url": "https://www.youtube.com/watch?v=4oCVDkb_EIs",
+			"content": "In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application. Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them.", 
+			"transcript":{
+				"0.2": "Hello welcome to podcast!",   
+				"5.0": "This is the FC"
+			}
+		},
+		{
+			"id": "5",
+			"title": "React Forms",
+			"url": "https://www.youtube.com/watch?v=t3r9xW-sxqs",
+			"content": "HTML form elements work a bit differently from other DOM elements in React, because form elements naturally keep some internal state. In HTML, form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with setState()", 
+			"transcript":{
+				"0.2": "Hello welcome to podcast!",   
+				"5.0": "This is the FC"
+			}
+		}
+	]
+}

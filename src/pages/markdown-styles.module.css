@@ -1,0 +1,19 @@
+.reactMarkDown {
+  /* display: flex; */
+  justify-content: left;
+  padding: 0rem 6.2rem;
+  font-size: 0.96rem;
+}
+
+.reactMarkDown > h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+.reactMarkDown > a {
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+
