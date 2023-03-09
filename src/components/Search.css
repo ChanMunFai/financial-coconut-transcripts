@@ -1,31 +1,3 @@
-/* .search-bar-container {
-  display: block;
-  align-items: center;
-  width: 100%;
-  text-align: right;
-  margin-right:auto;
-  margin-left:auto;
-}
-.search-bar {
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  font-weight: 100;
-  margin-bottom: 2rem;
-  min-height: 10rem;
-  font-size: 40px;
-}
-
-
-
-
-input[type="search"] {
-  box-sizing: border-box;
-  width: 10rem;
-  height: 10rem;
-} */
-
 .search-bar-container {
   display: flex;
   justify-content: center;

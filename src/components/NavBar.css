@@ -8,24 +8,6 @@
     padding: 1rem 6rem;
 }
 
-/* Left */
-.TitleContainer {
-    display: flex;
-    align-items: center;
-}
-
-.HomeButton {
-    font-size: 1.4rem;
-    font-weight: 200;
-    color: white;
-    text-decoration: none;
-}
-
-.Logo {
-    width: 50px;
-    height: 50px;
-}
-
 /* Right  */
 .AboutContainer {
   display: flex;
