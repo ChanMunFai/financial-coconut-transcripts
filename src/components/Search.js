@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
-import Scroll from './Scroll';
 import SearchList from './SearchList';
+import './Search.css'
 
 function Search({ details }) {
 
   const [searchField, setSearchField] = useState("");
+  // Iteration 1: filter cards whose titles and summary are within search input 
+  // Final iteration: search through all content 
 
-  const filteredPersons = details.filter(
-    person => {
+  const filteredPosts = details.filter(
+    post => {
       return (
-        person
-        .name
+        post
+        .title
         .toLowerCase()
         .includes(searchField.toLowerCase()) ||
-        person
-        .email
+        post
+        .content
         .toLowerCase()
         .includes(searchField.toLowerCase())
       );
@@ -27,27 +29,22 @@ function Search({ details }) {
 
   function searchList() {
     return (
-      <Scroll>
-        <SearchList filteredPersons={filteredPersons} />
-      </Scroll>
+      <SearchList filteredCards={filteredPosts} />
     );
   }
 
   return (
-    <section className="garamond">
-      <div className="navy georgia ma0 grow">
-        <h2 className="f2">Search your course</h2>
-      </div>
-      <div className="pa2">
+    <div>
+      <div className='search-bar-container'>
         <input 
-          className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
+          className="search-bar"
           type = "search" 
-          placeholder = "Search People" 
+          placeholder = "Search Financial Coconut" 
           onChange = {handleChange}
         />
       </div>
       {searchList()}
-    </section>
+    </div>
   );
 }
 
