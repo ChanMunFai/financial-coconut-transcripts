@@ -4,6 +4,12 @@
   font-size: 0.96rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .reactMarkDown {
+    padding: 2rem;
+  }
+}
+
 .reactMarkDown > h1 {
     text-align: center;
     font-size: 2rem;
