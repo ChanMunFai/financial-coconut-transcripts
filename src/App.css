@@ -22,7 +22,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 0.3rem;
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   font-size: 0.8rem;
 }
 
