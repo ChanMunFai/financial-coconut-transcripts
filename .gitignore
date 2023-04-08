@@ -21,3 +21,19 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# backend - to be deprecated
+/backend 
+
+# datafiles 
+/data/audio_files/
+/transcripts/
+/cleaned_transcripts/
+
+# virtual environment 
+/fc_venv 
+
+# cache 
+__pycache__/
+*.pyc
+
