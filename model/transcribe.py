@@ -14,7 +14,7 @@ def load_model(model_name="large"):
     # model.load_state_dict(state_dict)
     return model 
 
-def transcribe(model, audio_file, output_file): 
+def vid_transcribe(model, audio_file, output_file): 
     st = time.time()
     result=model.transcribe(audio_file, language = "en")
     et = time.time()
@@ -30,7 +30,8 @@ def extract_title(file_path):
     bracket_pos = file_name.rfind('[')
     if bracket_pos != -1:
         title = file_name[:bracket_pos].strip()
-    title = title.replace("?", "") # remove question marks for consistency
+    title = title.replace("?", "") # remove question marks 
+    title = title.replace("$", "") # remove dollar sign
     return title
 
 def transcribe(model_name="large"): 
@@ -52,7 +53,7 @@ def transcribe(model_name="large"):
         # Start Transcript 
         if transcript_file not in transcribed_files: 
             print(f"Transcribing into {transcript_file}...")
-            transcribe(model, audio_file, transcript_file)
+            vid_transcribe(model, audio_file, transcript_file)
 
     with open('./data/metadata_v2.json', 'w', encoding ='utf8') as f:
         json.dump(data, f, ensure_ascii=False)

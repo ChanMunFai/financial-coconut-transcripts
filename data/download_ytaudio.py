@@ -30,6 +30,7 @@ def extract_title(url):
         try:
             title = vid.title
             title = title.replace("?", "") # remove question marks as this is automatically deleted by PyTube when downloading files 
+            title = title.replace("$", "") # remove dollar sign
             return title 
         except:
             print("Retrying extraction of title")
@@ -62,8 +63,10 @@ def download_ytaudio(urls):
             metadata_list.append(metadata_dict)
             initial_urls.append(url) # prevent duplicates 
 
-    with open('./data/metadata.json', 'w', encoding ='utf8') as f:
-        json.dump(metadata_list, f, ensure_ascii=False)
+        # Continuously update metadata.json
+        with open('./data/metadata.json', 'w', encoding ='utf8') as f:
+            json.dump(metadata_list, f, ensure_ascii=False)
+
 
 if __name__ == "__main__": 
     # urls = []
