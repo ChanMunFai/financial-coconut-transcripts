@@ -37,6 +37,9 @@ yarn-error.log*
 # cache 
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
 
 # Summary 
-summary/ 
+summary/Cohere_X_Langchain Podcast.ipynb 
+summary/experiment.py
+summary/summarise.py
