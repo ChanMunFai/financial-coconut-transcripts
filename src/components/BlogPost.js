@@ -3,6 +3,14 @@ import YouTube from 'react-youtube';
 import { useParams } from 'react-router';
 import "./BlogPost.css";
 
+function formatTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const secondsRemaining = Math.floor(seconds % 60);
+  const minutesFormatted = minutes.toString().padStart(2, '0');
+  const secondsFormatted = secondsRemaining.toString().padStart(2, '0');
+  return `${minutesFormatted}:${secondsFormatted}`;
+}
+
 function DisplayTranscript(props) {
   const { post, onTimestampClick } = props;
   const keys = Object.keys(post.transcript);
@@ -18,7 +26,7 @@ function DisplayTranscript(props) {
                 onTimestampClick(parseFloat(key));
               }}
             >
-              {key}: 
+              {formatTime(parseFloat(key))}
             </a> &nbsp; {post.transcript[key]}
           </p>
         </div>
