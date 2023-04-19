@@ -32,8 +32,11 @@ yarn-error.log*
 
 # virtual environment 
 /fc_venv 
+/summ_venv
 
 # cache 
 __pycache__/
 *.pyc
 
+# Summary 
+summary/ 

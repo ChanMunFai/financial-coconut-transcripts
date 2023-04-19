@@ -11,8 +11,17 @@ from model.clean_transcripts import clean_transcripts
 transcripts_folder = "./cleaned_transcripts/"
 transcripts_filenames = ["./cleaned_transcripts/" + f for f in os.listdir(transcripts_folder)]
 
-def summarise(text): 
-    return "This is a placeholder summary text."
+def summarise(vid): 
+    # Load JSON file 
+    with open("./summary/generated_summaries.json") as f:
+        summary_data = json.load(f) 
+
+    print(vid["title"])
+    for i in summary_data: 
+        if i["title"] == vid["title"]: 
+            return i["summary"].strip()
+        
+    return """This is a podcast series on Financial Literacy in Singapore!"""
 
 def generate_data(): 
     final_data = []
@@ -29,7 +38,7 @@ def generate_data():
         with open(transcript_loc) as f: 
             transcript = json.load(f)
 
-        content = summarise(transcript["text"])
+        content = summarise(vid)
         
         vid_dict = {
             "id": str(id+1), 
@@ -53,12 +62,16 @@ def generate_data():
 
 if __name__ == "__main__": 
     # urls = []
-    urls = Playlist("https://www.youtube.com/watch?v=5ywZibui2Jc&list=PLpo30qPT9yc4YW3_-8-7IZ5oUiSlxXdSz")
-    print("---Downloading Audio Files---")
-    download_ytaudio(urls)
-    print("---Transcribing---")
-    transcribe()
-    clean_transcripts()
+    # urls = Playlist("https://www.youtube.com/watch?v=8_yGaPLcLgM&list=PLpo30qPT9yc4heHJEvmJkCBKiqioT8iLl")
+    # print("---Downloading Audio Files---")
+    # download_ytaudio(urls)
+    # print("---Transcribing---")
+    # transcribe()
+    # clean_transcripts()
     generate_data()
+    # with open('./data/metadata_v2.json') as f: 
+    #     metadata = json.load(f)
+    # vid = metadata[0]
+    # print(summarise(vid))
 
     
